@@ -75,11 +75,11 @@
 
         navigation {
             bindings = <
-&kp GRAVE      &kp F1     &kp F2     &kp F3      &kp F4       &kp F5             &mmv MOVE_UP     &kp F6     &kp F7     &kp F8      &kp F9     &kp F10           &kp DELETE
-&trans         &trans     &trans     &trans      &trans       &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP  &kp HOME   &kp UP      &kp END    &kp MINUS         &kp EQUAL
-&trans         &trans     &trans     &trans      &trans       &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LC(LS(Z))  &kp LC(Z)  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &mkp LCLK  &mkp RCLK  &kp INSERT  &kp F11    &kp F12           &kp ENTER
-&kp C_MUTE     &trans     &trans     &trans      &trans       &kp CAPS           &mkp LCLK        &trans     &trans     &trans      &trans     &trans
+&kp GRAVE   &kp F1     &kp F2     &kp F3      &kp F4       &kp F5             &mmv MOVE_UP     &kp F6     &kp F7     &kp F8      &kp F9     &kp F10           &kp DELETE
+&trans      &trans     &trans     &trans      &trans       &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP  &kp HOME   &kp UP      &kp END    &kp MINUS         &kp EQUAL
+&trans      &trans     &trans     &trans      &trans       &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &kp LC(Z)  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &mkp LCLK  &mkp RCLK  &kp INSERT  &kp F11    &kp F12           &kp ENTER
+&kp C_MUTE  &trans     &trans     &trans      &trans       &kp CAPS           &mkp LCLK        &trans     &trans     &trans      &trans     &trans
             >;
 
             display-name = "l2";
