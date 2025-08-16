@@ -170,7 +170,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - Ctl+Sft+Z
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - CUT
   - COPY
