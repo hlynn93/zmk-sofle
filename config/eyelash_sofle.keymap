@@ -65,11 +65,11 @@
 
         L1 {
             bindings = <
-&trans            &trans            &trans        &trans         &trans            &trans                  &mmv MOVE_UP     &trans                 &trans          &trans     &trans         &trans  &trans
-&trans            &kp TILDE         &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS    &mmv MOVE_DOWN   &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS   &kp PIPE       &trans  &trans
-&kp LEFT_CONTROL  &kp GRAVE         &kp SLASH     &kp COMMA      &kp PERIOD        &kp LEFT_BRACE          &mmv MOVE_LEFT   &kp RIGHT_BRACE        &kp MINUS       &kp EQUAL  &kp BACKSLASH  &trans  &trans
-&kp LEFT_SHIFT    &trans            &trans        &trans         &trans            &kp LEFT_BRACKET        &mmv MOVE_RIGHT  &kp RIGHT_BRACKET      &trans          &trans     &trans         &trans  &kp ENTER
-&trans            &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT   &trans            &trans                  &mkp LCLK        &mkp LCLK              &mkp RCLK       &trans     &trans         &trans
+&trans            &trans            &trans        &trans            &trans             &trans    &mmv MOVE_UP     &trans     &trans          &trans     &trans         &trans  &trans
+&trans            &kp TILDE         &kp QUESTION  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans    &mmv MOVE_DOWN   &trans     &kp UNDERSCORE  &kp PLUS   &kp PIPE       &trans  &trans
+&kp LEFT_CONTROL  &kp GRAVE         &kp SLASH     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &mmv MOVE_LEFT   &trans     &kp MINUS       &kp EQUAL  &kp BACKSLASH  &trans  &trans
+&kp LEFT_SHIFT    &trans            &trans        &trans            &trans             &trans    &mmv MOVE_RIGHT  &trans     &trans          &trans     &trans         &trans  &kp ENTER
+&trans            &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT      &trans             &trans    &mkp LCLK        &mkp LCLK  &mkp RCLK       &trans     &trans         &trans
             >;
         };
 
