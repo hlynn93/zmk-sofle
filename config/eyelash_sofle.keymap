@@ -38,16 +38,25 @@
     behaviors {
     };
 
+    macros {
+        allmods: allmods {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LG(LEFT_CONTROL)))>;
+            label = "ALLMODS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9           &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O            &kp P     &kp BSLH
-&kp LCTRL   &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K      &kp L            &kp SEMI  &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT          &kp FSLH  &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp ENTER    &kp ENTER        &kp SPACE  &mo 2   &mo 2      &kp RIGHT_SHIFT  &mo 3
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5    &kp UP_ARROW     &kp N6                &kp N7       &kp N8     &kp N9           &kp N0    &kp BACKSPACE
+&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T     &kp DOWN_ARROW   &kp Y                 &kp U        &kp I      &kp O            &kp P     &kp BSLH
+&kp LCTRL   &kp A      &kp S         &kp D         &kp F   &kp G     &kp LEFT_ARROW   &kp H                 &kp J        &kp K      &kp L            &kp SEMI  &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B     &kp RIGHT_ARROW  &kp N                 &kp M        &kp COMMA  &kp DOT          &kp FSLH  &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &mo 3     &kp ENTER        &mt LEFT_SHIFT SPACE  &lt 2 SPACE  &mo 2      &kp RIGHT_SHIFT  &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -56,18 +65,18 @@
 
         L1 {
             bindings = <
-&trans  &trans         &trans            &trans          &trans                &trans    &mmv MOVE_UP     &trans     &trans                 &trans           &trans             &trans            &trans
-&trans  &kp TILDE      &trans            &trans          &kp QUESTION          &trans    &mmv MOVE_DOWN   &trans     &trans                 &kp TILDE        &kp UNDER          &kp PLUS          &trans
-&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans    &mmv MOVE_LEFT   &trans     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
-&trans  &kp GRAVE      &trans            &trans          &kp SLASH             &trans    &mmv MOVE_RIGHT  &mkp RCLK  &trans                 &kp BACKSLASH    &kp MINUS          &kp EQUAL         &trans
-&trans  &trans         &trans            &trans          &trans                &trans    &mkp LCLK        &mkp LCLK  &trans                 &trans           &trans             &trans
+&trans            &trans            &trans        &trans         &trans            &trans                  &mmv MOVE_UP     &trans                 &trans          &trans     &trans         &trans  &trans
+&trans            &kp TILDE         &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS    &mmv MOVE_DOWN   &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS   &kp PIPE       &trans  &trans
+&kp LEFT_CONTROL  &kp GRAVE         &kp SLASH     &kp COMMA      &kp PERIOD        &kp LEFT_BRACE          &mmv MOVE_LEFT   &kp RIGHT_BRACE        &kp MINUS       &kp EQUAL  &kp BACKSLASH  &trans  &trans
+&kp LEFT_SHIFT    &trans            &trans        &trans         &trans            &kp LEFT_BRACKET        &mmv MOVE_RIGHT  &kp RIGHT_BRACKET      &trans          &trans     &trans         &trans  &kp ENTER
+&trans            &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT   &trans            &trans                  &mkp LCLK        &mkp LCLK              &mkp RCLK       &trans     &trans         &trans
             >;
         };
 
         navigation {
             bindings = <
 &kp GRAVE   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5             &mmv MOVE_UP     &kp F6     &kp F7     &kp F8      &kp F9     &kp F10           &kp DELETE
-&trans      &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP  &kp END    &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&trans      &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP  &kp HOME   &kp UP      &kp END    &kp MINUS         &kp EQUAL
 &trans      &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &mkp LCLK  &mkp RCLK  &kp INSERT  &kp F11    &kp F12           &kp ENTER
 &kp C_MUTE  &trans        &trans        &trans        &trans        &kp CAPS           &mkp LCLK        &trans     &trans     &trans      &trans     &trans
@@ -75,6 +84,16 @@
 
             display-name = "l2";
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        numpad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP    &trans        &trans        &trans        &trans        &trans      &kp PRINTSCREEN
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS     &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_NEXT         &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DELETE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PLAY_PAUSE   &trans        &trans        &trans        &kp NUMBER_0  &trans
+            >;
         };
 
         media {
@@ -87,16 +106,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        unused_layer4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP    &trans  &trans  &trans          &trans      &trans            &kp PRINTSCREEN
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &trans  &trans  &trans          &trans      &kp C_PLAY_PAUSE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS     &trans  &trans  &trans          &trans      &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_NEXT         &trans  &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PLAY_PAUSE   &trans  &trans  &trans          &trans      &trans
-            >;
         };
     };
 };
