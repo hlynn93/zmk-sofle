@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: l2}
-  - '&allmods'
+  - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - media
   L1:
