@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -155,8 +155,8 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - F11
   - F12
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '%'
   - ^
@@ -168,21 +168,21 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ins
-  - PRINTSCREEN
+  - F11
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
   - F3
   - F4
   - F5
-  - F6
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
