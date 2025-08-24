@@ -1,3 +1,3 @@
 # Layout
 
-![Sofle Eyelash Layout](eyelash_sofle.svg)
+![Sofle Eyelash Layout](/keymap-drawer/eyelash_sofle.svg)
