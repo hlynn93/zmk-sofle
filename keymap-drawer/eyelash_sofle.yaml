@@ -91,7 +91,7 @@ layers:
   - '8'
   - '9'
   - '|'
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-control$$
   - {t: '`', s: '~'}
   - '{'
