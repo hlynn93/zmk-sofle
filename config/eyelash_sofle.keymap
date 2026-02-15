@@ -69,7 +69,7 @@
         L1 {
             bindings = <
 &trans            &trans     &trans                &trans                 &trans          &trans        &mmv MOVE_UP     &trans     &trans        &trans        &trans        &trans         &trans
-&kp TAB           &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS      &mmv MOVE_DOWN   &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PIPE       &kp DELETE
+&kp TAB           &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS      &mmv MOVE_DOWN   &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PIPE       &kp BACKSPACE
 &kp LEFT_CONTROL  &kp GRAVE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS       &kp EQUAL     &mmv MOVE_LEFT   &kp COMMA  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSLASH  &kp INSERT
 &kp LEFT_SHIFT    &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COMMA       &kp PERIOD    &mmv MOVE_RIGHT  &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &kp ENTER
 &trans            &trans     &kp LEFT_GUI          &kp LEFT_ALT           &trans          &trans        &mkp LCLK        &mkp LCLK  &mkp RCLK     &kp NUMBER_0  &kp PERIOD    &trans
