@@ -91,7 +91,7 @@ layers:
   - '8'
   - '9'
   - '|'
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   - {t: '`', s: '~'}
   - '{'
@@ -109,8 +109,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ',', s: <}
+  - .
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: ., s: '>'}
   - '1'
